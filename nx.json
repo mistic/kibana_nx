@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "kibana-nx",
+  "npmScope": "kibana_nx",
   "affected": {
     "defaultBase": "main"
   },
@@ -26,5 +26,10 @@
   "workspaceLayout": {
     "appsDir": "packages",
     "libsDir": "packages"
+  },
+  "pluginsConfig": {
+    "@nrwl/js": {
+      "analyzeSourceFiles": true
+    }
   }
 }

@@ -45,7 +45,7 @@ module.exports = async function boilerplateExecutor(
     }
 
     tsRefs.push({
-      path: `./${path.relative(libRoot, nxProject.data.root)}`,
+      path: `${path.relative(libRoot, nxProject.data.root)}`,
     });
   })
   tsRefs.sort();

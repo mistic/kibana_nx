@@ -73,6 +73,9 @@ module.exports =  async function (host, options) {
     boilerplate: {
       executor: '@kbn/nx:boilerplate',
     },
+    build: {
+      executor: '@kbn/nx:transpile',
+    },
     typecheck: {
       executor: '@kbn/nx:typecheck',
     },

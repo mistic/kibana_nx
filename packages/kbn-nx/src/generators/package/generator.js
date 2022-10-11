@@ -108,5 +108,7 @@ module.exports =  async function (host, options) {
 
   await formatFiles(host);
 
-  await installPackagesTask(host, true);
+  return () => {
+    installPackagesTask(host)
+  };
 }

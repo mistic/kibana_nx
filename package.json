@@ -7,8 +7,10 @@
     "generate-pkg": "nx generate @kbn/nx:package",
     "boilerplate": "node tools/boilerplate && nx run-many --target=boilerplate",
     "bootstrap": "node tools/boilerplate && nx run-many --target=typecheck && nx run-many --target=build",
+    "lint": "nx run-many --target=lint",
     "typecheck": "node tools/boilerplate && nx run-many --target=typecheck",
     "affected:boilerplate": "node tools/boilerplate && nx affected --target=boilerplate",
+    "affected:lint": "nx affected --target=lint",
     "affected:typecheck": "node tools/boilerplate && nx affected --target=typecheck"
   },
   "private": true,

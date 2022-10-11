@@ -1,0 +1,8 @@
+{
+    "title": "A package transpile executor",
+    "description": "",
+    "type": "object",
+    "cli": "nx",
+    "properties": {},
+    "required": []
+}

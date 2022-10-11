@@ -1,0 +1,6 @@
+{
+  "extends": "<%= offsetFromRoot %>tsconfig.settings.json",
+  "compilerOptions": {
+    "emitDeclarationOnly": true,
+  },
+}

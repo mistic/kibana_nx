@@ -2,15 +2,31 @@
   "name": "kibana_nx",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "generate": "nx generate @kbn/nx:package --dry-run",
+    "boilerplate": "node tools/boilerplate && nx run-many --target=boilerplate",
+    "typecheck": "node tools/boilerplate && nx run-many --target=typecheck",
+    "affected:boilerplate": "node tools/boilerplate && nx affected --target=boilerplate",
+    "affected:typecheck": "node tools/boilerplate && nx affected --target=typecheck"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "@kbn/nx": "link:packages/kbn-nx",
     "@nrwl/cli": "14.8.3",
+    "@nrwl/devkit": "14.8.3",
+    "@nrwl/eslint-plugin-nx": "14.8.3",
     "@nrwl/js": "14.8.3",
+    "@nrwl/linter": "14.8.3",
+    "@nrwl/nx-plugin": "^14.8.3",
     "@nrwl/workspace": "14.8.3",
+    "eslint": "^8.25.0",
+    "execa": "^5.1.1",
+    "jsonc-eslint-parser": "^2.1.0",
     "nx": "14.8.3",
     "prettier": "^2.6.2",
-    "typescript": "~4.8.2"
+    "typescript": "~4.8.2",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1"
   }
 }

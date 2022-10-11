@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "executors": {
+        "boilerplate": {
+          "implementation": "./src/executors/boilerplate/executor",
+          "schema": "./src/executors/boilerplate/schema.json"
+        },
+        "transpile": {
+          "implementation": "./src/executors/transpile/executor",
+          "schema": "./src/executors/transpile/schema.json"
+        },
+        "typecheck": {
+          "implementation": "./src/executors/typecheck/executor",
+          "schema": "./src/executors/typecheck/schema.json"
+        }
+    }
+}

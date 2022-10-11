@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@kibana_nx/lib1": ["packages/lib1/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

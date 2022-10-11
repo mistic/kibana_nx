@@ -17,7 +17,7 @@ function normalizeOptions(
 ) {
     const workspaceNamePrefix = "@kbn";
     const fileNameCasing = names(options.name).fileName;
-    const name = fileNameCasing.startsWith('kbn-') ? fileNameCasing : `kbn-${fileNameCasing};`
+    const name = fileNameCasing.startsWith('kbn-') ? fileNameCasing : `kbn-${fileNameCasing}`;
     const projectName = name.replace(new RegExp('/', 'g'), '-')
     const projectDirectory = options.directory
       ? `${names(options.directory).fileName}/${projectName}`

@@ -89,7 +89,7 @@ module.exports =  async function (host, options) {
   addFiles(host, normalizedOptions)
 
   updateJson(host, 'package.json', (pkgJson) => {
-    pkgJson.dependencies[normalizeOptions().packageName] = `link:${normalizedOptions.projectDirectory}`;
+    pkgJson.dependencies[normalizedOptions.packageName] = `link:${normalizedOptions.projectDirectory}`;
     return pkgJson;
   })
 

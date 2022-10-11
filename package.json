@@ -11,9 +11,7 @@
     "affected:typecheck": "node tools/boilerplate && nx affected --target=typecheck"
   },
   "private": true,
-  "dependencies": {
-    "undefined": "link:undefined"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@kbn/nx": "link:packages/kbn-nx",
     "@nrwl/cli": "14.8.3",

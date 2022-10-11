@@ -3,9 +3,5 @@
   "compilerOptions": {
     "disableSourceOfProjectReferenceRedirect": true
   },
-  "references": [
-    {
-      "path": "./packages/kbn-lib1"
-    }
-  ]
+  "references": []
 }

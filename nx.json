@@ -33,6 +33,10 @@
     "appsDir": "packages",
     "libsDir": "packages"
   },
+  "cli": {
+    "defaultCollection": "@kbn/nx",
+    "packageManager": "yarn"
+  },
   "pluginsConfig": {
     "@nrwl/js": {
       "analyzeSourceFiles": true

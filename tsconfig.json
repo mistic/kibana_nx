@@ -3,5 +3,12 @@
   "compilerOptions": {
     "disableSourceOfProjectReferenceRedirect": true
   },
-  "references": []
+  "references": [
+    {
+      "path": "./packages/kbn-zlib1"
+    },
+    {
+      "path": "./packages/kbn-zlib2"
+    }
+  ]
 }

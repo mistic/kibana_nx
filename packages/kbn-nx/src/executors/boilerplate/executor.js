@@ -2,7 +2,6 @@ const { createProjectGraphAsync } = require('@nrwl/workspace/src/core/project-gr
 const {
   calculateProjectDependencies,
 } = require('@nrwl/workspace/src/utilities/buildable-libs-utils');
-const execa = import('execa');
 const fs = require('fs');
 const path = require('path');
 
@@ -38,7 +37,11 @@ module.exports = async function boilerplateExecutor(
     }
 
     const pkgName = dep.node.data.packageName;
-    const projectName = pkgName.replace(/^@/gi, '').replace(/\//gi, '-');
+
+    const projectName = pkgName
+      ? pkgName.replace(/^@/gi, '').replace(/\//gi, '-')
+      : dep.node.data.name;
+
     const nxProject = projGraph.nodes[projectName];
     if (!nxProject || !nxProject.data.targets.typecheck) {
       return;

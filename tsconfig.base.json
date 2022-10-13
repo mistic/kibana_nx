@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@kibana_nx/lib1": ["packages/lib1/src/index.ts"]
+      "@kbn/zlib1/*": ["packages/kbn-zlib1/src/*"],
+      "@kbn/zlib2/*": ["packages/kbn-zlib2/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

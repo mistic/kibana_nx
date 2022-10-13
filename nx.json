@@ -21,7 +21,7 @@
       "dependsOn": ["^boilerplate"]
     },
     "typecheck": {
-      "dependsOn": ["boilerplate"]
+      "dependsOn": ["boilerplate", "^typecheck"]
     }
   },
   "namedInputs": {

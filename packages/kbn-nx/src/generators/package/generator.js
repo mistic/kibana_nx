@@ -109,6 +109,15 @@ module.exports =  async function (host, options) {
     })
   }
 
+  if (host.exists('tsconfig.base.json')) {
+    updateJson(host, 'tsconfig.base.json', (tsconfig) => {
+      if (tsconfig.compilerOptions.paths) {
+        tsconfig.compilerOptions.paths[`${normalizedOptions.packageName}/*`] = [`${normalizedOptions.projectRoot}/src/*`];
+      }
+      return tsconfig
+    })
+  }
+
   await formatFiles(host);
 
   return () => {
